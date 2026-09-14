@@ -48,6 +48,19 @@ $(BUILD_DIR)/%: $(SRC_DIR)/%.c
 	$(CC) $(CFLAGS) $< -o $@ $(LDFLAGS)
 
 # -----------------------
+
+hello: $(BUILD_DIR)/hello
+calculator: $(BUILD_DIR)/calculator
+formats: $(BUILD_DIR)/formats
+
+run-hello:
+	./$(BUILD_DIR)/hello
+
+run-calculator:
+	./$(BUILD_DIR)/calculator
+
+run-formats:
+	./$(BUILD_DIR)/formats
 # Run targets (run whatever was built, in order)
 # -----------------------
 run-lab1: lab1
