@@ -25,7 +25,27 @@ Choose the method that fits your situation.
 
 ---
 
-### Option A – Update Your Existing Codespace (Recommended)
+### Option A – Update Your Fork Using GitHub "Sync Fork" Button (Recommended)
+
+If you don't want to use terminal commands in Codespaces, you can update your fork directly on the GitHub website.
+
+#### Steps
+
+1. Open your fork of the course repository on GitHub (e.g. `https://github.com/student123/Programming_Languages_C_2026_Fall_Labs`).
+2. On the repository page, you should see a **"Sync fork"** button near the top of the page.
+   - If your fork is behind the teacher's repository, GitHub will show something like:
+     *"This branch is 3 commits behind mareksxb:main"*.
+3. Click the **"Sync fork"** button, then click **"Update branch"** to bring your fork up to date.
+4. After that, go back to your Codespace and run:
+   ```bash
+   git pull origin main --no-rebase
+   ```
+   This will download the updated files from your fork into your Codespace.
+
+⚠️ **Note:** The "Sync fork" method updates your fork on GitHub, but you still need to run
+`git pull origin main` inside your Codespace to get the new files locally.
+
+### Option B – Update Your Existing Codespace
 
 If you already forked the course repository in Week 1 and created a Codespace, you can simply **pull the new files**.
 
@@ -59,27 +79,7 @@ If you already forked the course repository in Week 1 and created a Codespace, y
    Week_3_instructions.md
    ```
 
-### Option A2 – Update Your Fork Using GitHub "Sync Fork" Button
-
-If you don't want to use terminal commands in Codespaces, you can update your fork directly on the GitHub website.
-
-#### Steps
-
-1. Open your fork of the course repository on GitHub (e.g. `https://github.com/student123/Programming_Languages_C_2026_Fall_Labs`).
-2. On the repository page, you should see a **"Sync fork"** button near the top of the page.
-   - If your fork is behind the teacher's repository, GitHub will show something like:
-     *"This branch is 3 commits behind mareksxb:main"*.
-3. Click the **"Sync fork"** button, then click **"Update branch"** to bring your fork up to date.
-4. After that, go back to your Codespace and run:
-   ```bash
-   git pull origin main
-   ```
-   This will download the updated files from your fork into your Codespace.
-
-⚠️ **Note:** The "Sync fork" method updates your fork on GitHub, but you still need to run
-`git pull origin main` inside your Codespace to get the new files locally.
-
-### Option B – Create a New Fork and Codespace (Only if Needed)
+### Option C – Create a New Fork and Codespace (Only if Needed)
 
 Use this option **only if**:
 - You accidentally deleted your Codespace, **or**

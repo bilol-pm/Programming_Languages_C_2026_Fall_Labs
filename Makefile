@@ -12,7 +12,7 @@ LAB1_BINS = hello calculator formats
 LAB2_BINS = lab2_1 lab2_2 lab2_3
 LAB3_BINS = lab3_task1 lab3_task2 lab3_task3
 LAB4_BINS = week4_1_dynamic_array week4_2_struct_student week4_3_struct_database
-LAB5_BINS = week5_task1_file_io week5_task2_struct_save_load week5_task3_student_management_system
+LAB5_BINS = week5_task1_file_io week5_task2_struct_save_load week5_task3_student_management_system week5_task4_struct_binary_io
 
 # Map binary name -> source basename
 src_of = $(if $(filter formats,$1),format_specifiers,$1)
